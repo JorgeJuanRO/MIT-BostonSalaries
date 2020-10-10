@@ -1,2 +1,2 @@
-# MIT-BostonSalaries
+# MITPE-BostonSalaries
 Exercise JSON Salaries
