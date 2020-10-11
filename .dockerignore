@@ -1,0 +1,3 @@
+#INTRODUCIR LO QUE NO QUEREMOS AÑADIR AL CONTENEDOR
+node_modules
+npm-debug.log
