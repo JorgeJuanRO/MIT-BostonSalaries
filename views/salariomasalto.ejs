@@ -1,0 +1,27 @@
+<%- include('partials/head') %>
+  
+  <h3>Lista de todos los registros del fichero JSON</h3>
+    <!-- TABLA ORDENADA DE PUESTOS SIMILARES A LA PERSONA CON EL MÁXIMO SALARIO DEL DOCUMENTO-->
+    <h4> Resultado de salario más alto de la muestra:</h4>
+    <table id="customers">
+      <tr>
+        <th>KEY</th>
+        <th>ID</th>
+        <th>NOMBRE</th>
+        <th>DEPARTAMENTO</th>
+        <th>PUESTO LABORAL</th>
+        <th>SALARIO BASE</th>
+        <th>SALARIO TOTAL</th>
+      </tr>         
+          <tr>
+              <td><%= objeto.array_key %></td>
+              <td><%= objeto.array_id %></td>
+              <td><%= objeto.array_nombre %></td>
+              <td><%= objeto.array_departamento %></td>
+              <td><%= objeto.array_puesto %></td>
+              <td><%= objeto.array_salario_base %></td>
+              <td><%= objeto.array_salario %></td>
+          </tr> 
+    </table>
+    <br>
+<%- include('partials/footer') %>

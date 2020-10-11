@@ -1,0 +1,26 @@
+<%- include('partials/head') %>
+  
+  <h3>Lista de todos los registros del fichero JSON</h3>
+    <!-- TABLA ORDENADA DE PUESTOS SIMILARES A LA PERSONA CON EL MÁXIMO SALARIO DEL DOCUMENTO-->
+    <table id="customers">
+      <tr>
+        <th>ID</th>
+        <th>NOMBRE</th>
+        <th>DEPARTAMENTO</th>
+        <th>PUESTO LABORAL</th>
+        <th>SALARIO BASE</th>
+        <th>SALARIO TOTAL</th>
+      </tr>         
+        <% array_datos_ejs.forEach(function(array_datos_ejs) { %>
+              <tr>
+                <td><%= array_datos_ejs.array_id %></td>
+                <td><%= array_datos_ejs.array_nombre %> $</td>  
+                <td><%= array_datos_ejs.array_departamento %></td>
+                <td><%= array_datos_ejs.array_puesto %></td>
+                <td><%= array_datos_ejs.array_salario_base %> $</td>
+                <td><%= array_datos_ejs.array_salario %> $</td>
+              </tr> 
+          <% }); %>
+    </table>
+    
+<%- include('partials/footer') %>

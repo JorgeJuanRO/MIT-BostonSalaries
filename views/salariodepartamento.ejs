@@ -1,0 +1,27 @@
+<%- include('partials/head') %>
+
+    <!-- TABLA ORDENADA DE PUESTOS SIMILARES A LA PERSONA CON EL MÁXIMO SALARIO DEL DOCUMENTO-->
+    <table id="customers">
+        <tr>
+          <th>KEY</th>
+          <th>ID</th>
+          <th>NOMBRE</th>
+          <th>DEPARTAMENTO</th>
+          <th>PUESTO LABORAL</th>
+          <th>SALARIO BASE</th>
+          <th>SALARIO TOTAL</th>
+        </tr>         
+          <% array_saldepartamentos.forEach(function(array_saldepartamentos) { %>
+                <tr>
+                    <td><%= array_saldepartamentos.array_key %></td>
+                    <td><%= array_saldepartamentos.array_id %></td>
+                    <td><%= array_saldepartamentos.array_nombre %></td>
+                    <td><%= array_saldepartamentos.array_departamento %></td>
+                    <td><%= array_saldepartamentos.array_puesto %></td>
+                    <td><%= array_saldepartamentos.array_salario_base %></td>
+                    <td><%= array_saldepartamentos.array_salario %></td>
+                </tr> 
+            <% }); %>
+      </table>
+    
+<%- include('partials/footer') %>

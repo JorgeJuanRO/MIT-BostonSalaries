@@ -1,0 +1,26 @@
+<%- include('partials/head') %>
+
+    <!-- AMPLIAR INFORMACION DE UN DEPARTAMENTO EN CONCRETO-->
+    <h3>Para ampliar la información de cada departamento, se puede utilizar el buscador...</h3>
+    <form action="/salariodepartamento" method="POST">
+      <input type="text" name="newItem" id="newItem" placeholder="INTRODUCE EL NOMBRE DEL DEPARTAMENTO PARA MÁS INFORMACION">
+      <button class="button">
+          ENTRAR EN INFORMACION DEL DEPARTAMENTO
+      </button>  
+  </form>
+    <br>
+    <h3>Lista de departamentos...</h3>
+    <!-- TABLA ORDENADA DE PUESTOS SIMILARES A LA PERSONA CON EL MÁXIMO SALARIO DEL DOCUMENTO-->
+    <table id="customers">
+      <tr>
+        <th>ID</th>
+        <th>NOMBRE DEPARTAMENTO</th>
+      </tr>         
+        <% array_departamentos.forEach(function(array_departamentos) { %>
+              <tr>
+                <td><%= array_departamentos.array_key %></td>
+                <td><%= array_departamentos.array_departamento %></td>
+              </tr> 
+        <% }); %>        
+    </table>
+<%- include('partials/footer') %>

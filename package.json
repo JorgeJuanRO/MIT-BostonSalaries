@@ -1,0 +1,26 @@
+{
+  "name": "mitpe-bostonsalaries",
+  "version": "1.0.0",
+  "description": "Exercise",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JorgeJuanRO/MITPE-BostonSalaries.git"
+  },
+  "author": "Jorge Juan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JorgeJuanRO/MITPE-BostonSalaries/issues"
+  },
+  "homepage": "https://github.com/JorgeJuanRO/MITPE-BostonSalaries#readme",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.1",
+    "nodemon": "^2.0.4"
+  }
+}
